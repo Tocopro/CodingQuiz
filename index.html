@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Quiz</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--------------------------------------------- Quiz Heading ---------------------------------------------------------->
+<div id="quiz_start_page_heading">
+  <h1>CODING QUIZ</h1>
+</div>
+<!------------------------------------Welcome Message that directs the user to push a button------------------>
+<div id="start_quiz">
+  <p id="start_words">Welcome!<br>
+    <br>
+  Push the Button to start the quiz</p>
+  <!--------------------------------The button has an event listener for a click---------------------------->
+  <button type="button" id="starting_quiz" onclick="quiz_start()">START</button>
+</div>
+<div id="quiz_rules_notice">
+  <!-------------------------once the button is pushed a notice for rules is displayed that was initially hidden-->
+  <span>Rules to the Game</span>
+  <p>As User You have 5 Multiple choice questions on Javascript<br>
+    You have One minute or if you finish earlier the program will exit
+</p>
+  <p id="rule_1">1. Fifteen seconds for each question</p>
+  <p id="rule_2">2. Once you select your answer, you can not reselect again</p>
+  <p id="rule_3">3. You can not select any option once time expires</p>
+  <p id="rule_4">4. You can not exit the quiz before you finish</p>
+  <p id="rule_5">5. Only correct answers will score you points</p>
+  <p id="continue">Continue....</p>
+  <!------------------When the button on the rule notice is pressed an event listener hides the rule notice and
+  reveals th main page whilst activating the timer and main function simultaneously---------------->
+  <button type="button" id="hide_notice" onclick="hide_notice()">CONTINUE</button>
+</div>
+<section id="section">
+  <!----------------Answer box tha displays the answer and a brief message-------------------------------->
+  <div id="answer_box">
+    <span>Answer = </span>
+  </div>
+  <!-------------------adjacent to it is the score box and the timer display box--------------------->
+  <div id="score"><span>SCORE</span></div>
+  <div id="time"><span>TIME</span></div>
+  <
+  <!----------------The main function takes a question from the question array and displays it in the question box
+  the question number is determined by an internal counter that selects by index----------------------->
+  <div id="question_space">
+    <p id="write_question"></p>
+  </div>
+  <!---------------------The multiple choices also use the same principle as the question to display from
+  the multi-choice array------------------->
+  <div id="multiple_choices">
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+  </div>
+  <!-------------------The Answers to the question are put in an array which is synchronised to the questions
+  to give the user the right answer using an internal count/index system------------>
+</section>
+<!----------------------Id selected to pick the object to be displayed in the appropriate boxes to inform the
+user of the score and time---------------->
+<div id="end">
+  <p id="end_statement"></p>
+  <p id="score_showing">Your Score</p>
+  <p id="score_show"></p>
+  <p id="time_showing">Time</p>
+  <p id="time_show"></p>
+</div>
+<!-------------------At the end of the game the user is presented a
+form to fill in the first and last name then submit it------------------>
+<div id="person_info">
+  <form id="form_fill_in">
+    <p id="last_message">GAME OVER! <br>
+      Thank you for playing
+    </p>
+
+    <ul style="text-decoration: none">
+      <li>
+        <label for="first_name" id="f_name">First Name: </label>
+        <input type="text" id="first_name" name="user_name" placeholder="First Name">
+      </li>
+      <li>
+        <label for="last_name" id="l_name">Last Name: </label>
+        <input type="text" id="last_name" name="user_name" placeholder="Last Name">
+      </li>
+      <button type="button" id="button2" onclick="">SUBMIT</button>
+    </ul>
+
+  </form>
+</div>
+<script src="index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+
+/*---------------------------------------Body the background color is set---------------------------------------------*/
+body {
+    background-color: white;
+}
+
+/*-------------------------------------styling for the quiz start welcome and rule notices--------------------------*/
+#quiz_start_page_heading {
+    padding-top: 20px;
+    text-align: center;
+}
+#start_quiz {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#start_words
+{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    line-height: 2em;
+}
+#starting_quiz {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+#quiz_rules_notice {
+    padding-left: 400px;
+    padding-top: 100px;
+    visibility: hidden;
+    border: solid transparent;
+    width: 800px;
+    height: 800px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+#hide_notice {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#section {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid transparent;
+    height: 700px;
+    width: 1100px;
+    margin-top: 80px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    visibility: hidden;
+}
+#answer_box {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    border-radius: 8px;
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    align-items: center;
+    padding-left: 10px;
+    visibility: hidden;
+}
+#score {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 620px;
+    top: 10px;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+#time {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 840px;
+    top: 10px;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+#move_button {
+    position: absolute;
+    top: 350px;
+    right: 80px;
+}
+#question_space {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: solid black;
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    visibility: hidden;
+    border-radius: 8px;
+    padding-left: 20px;
+}
+#multiple_choices {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid transparent;
+    margin-top: 40px;
+    height: 350px;
+    width: 800px;
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    visibility: hidden;
+    border-radius: 8px;
+}
+#button1 {
+    padding: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#a, #b, #c, #d {
+    display: flex;
+    border: solid black;
+    height: 80px;
+    width: 780px;
+    margin-left: 5px;
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 10px;
+}
+#form_fill_in {
+    display: flex;
+    border: solid transparent;
+    height: 1000px;
+    width: 1200px;
+    text-decoration: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    visibility: hidden;
+}
+#first_name
+{
+    display: inline-block;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+}
+#last_name
+{
+    display: inline-block;
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+#f_name
+{
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+#l_name
+{
+    position: absolute;
+    top: 450px;
+    left: 460px;
+}
+#button2
+{
+    position: absolute;
+    top: 550px;
+    left: 450px;
+}
+#end {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    height: 900px;
+    width: 1100px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: black;
+    visibility: hidden;
+    color: white;
+}
+#end_statement {
+    position: absolute;
+    top: 400px;
+    left: 350px;
+}
+#score_showing {
+    position: absolute;
+    top: 420px;
+    left: 350px;
+    margin-left: 20px;
+}
+#score_show {
+    position: absolute;
+    top: 420px;
+    left: 450px;
+}
+#time_showing {
+    position: absolute;
+    top: 440px;
+    left: 350px;
+}
+#time_show {
+    position: absolute;
+    top: 440px;
+    left: 400px;
+}
+#last_message
+{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+
+}
+
+/*------------------------------styling for smaller screen 480px to 680px--------------------------*/
+@media screen and (min-width: 480px) and (max-width: 680px)
+{
+    #start_quiz
+    {
+        display: flex;
+        border: solid black;
+        height: 300px;
+        position: absolute;
+        left: 40px;
+        top: 450px
+    }
+    #quiz_rules_notice
+    {
+
+        display: inline-block;
+        border: solid black;
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        left: 40px;
+        top: 250px;
+        padding-left: 5px;
+
+    }
+    #hide_notice
+    {
+        position: absolute;
+        top: 300px;
+        left: 150px;
+    }
+    #section
+    {
+        position: absolute;
+        height: 600px;
+        width: 400px;
+        left: 10px;
+    }
+    #answer_box, #question_space
+    {
+        position: absolute;
+        height: 100px;
+        width: 400px;
+        padding: 10px;
+        left: 18px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+    #multiple_choices
+    {
+        width: 430px;
+    }
+    #a, #b, #c, #d
+    {
+        width: 430px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+    #score
+    {
+        display: flex;
+        position: absolute;
+        top: 670px;
+        left: 10px;
+        width:160px;
+        border-radius: 8px;
+    }
+    #time
+    {
+        display: flex;
+        position: absolute;
+        top: 670px;
+        left: 250px;
+        width: 160px;
+        border-radius: 8px;
+
+    }
+    #form_fill_in
+    {
+        width: 500px;
+        padding-left: 20px;
+        border: solid transparent;
+    }
+    #first_name
+    {
+        position: absolute;
+        left: 80px;
+    }
+    #f_name
+    {
+        position: absolute;
+        left: 5px;
+    }
+    #last_name
+    {
+        position: absolute;
+        left: 80px;
+        top: 560px;
+    }
+    #l_name
+    {
+        position: absolute;
+        left: 5px;
+        top: 560px;
+    }
+    #button2
+    {
+        position: absolute;
+        left: 120px;
+        top: 650px;
+    }
+    #last_message
+    {
+        position: absolute;
+        left: 50px;
+    }
+}
+

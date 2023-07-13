@@ -230,5 +230,16 @@ click_d.addEventListener("click", () => {
 });
 
 
+function my_function(event)
+{
+    event.preventDefault();
+    let firstName = document.getElementById("first_name").value;
+    let last_name = document.getElementById("last_name").value;
+    let quiz_score = score_board;
+    localStorage.setItem("ls_first_name", firstName);
+    localStorage.setItem("ls_last_name", last_name);
+    localStorage.setItem("ls_score_board", quiz_score);
+}
+
 
 

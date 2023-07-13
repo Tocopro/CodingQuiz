@@ -24,5 +24,8 @@ multiple choices using indexes that are updated as the quiz updates.
 The quiz has arrays for questions and multiple choices so as to enable future updates i.e. adding or removing 
 questions.
 The quiz is planned and designed in a flexible way to allow for future changes.
+For the form section, I included local storage capabilities.
+The User can input First and Last name plus the quiz score.
+After clicking on the Submit button the user can view the key-value in your local storage.
 
 ![](2023-07-13-00-48-23.png)

@@ -75,18 +75,19 @@ form to fill in the first and last name then submit it------------------>
     <p id="last_message">GAME OVER! <br>
       Thank you for playing
     </p>
+    <p id="display_form"></p>
 
-    <ul style="text-decoration: none">
-      <li>
-        <label for="first_name" id="f_name">First Name: </label>
-        <input type="text" id="first_name" name="user_name" placeholder="First Name">
-      </li>
-      <li>
-        <label for="last_name" id="l_name">Last Name: </label>
-        <input type="text" id="last_name" name="user_name" placeholder="Last Name">
-      </li>
-      <button type="button" id="button2" onclick="">SUBMIT</button>
-    </ul>
+    <div>
+      <label for="first_name" id="f_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" value="First Name"/>
+    </div>
+    <div>
+      <label for="last_name" id="l_name">Last Name: </label>
+      <input type="text" id="last_name" name="last_name" placeholder="Last Name" value="Last Name"/>
+    </div>
+    <div>
+      <input type="button" id="button2" value="Submit" onclick="my_function(event)"/>
+    </div>    
 
   </form>
 </div>

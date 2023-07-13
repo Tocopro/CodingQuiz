@@ -197,6 +197,8 @@ body {
     position: absolute;
     top: 550px;
     left: 450px;
+    font-size: 15px;
+    font-weight: bold;
 }
 #end {
     display: flex;
